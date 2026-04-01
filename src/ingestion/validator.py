@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from src.ingestion.note_parser import ParsedNote
+from ingestion.note_parser import ParsedNote
 
 
 @dataclass(frozen=True)
