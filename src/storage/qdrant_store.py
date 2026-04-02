@@ -22,8 +22,6 @@ def get_qdrant_client() -> QdrantClient:
     qdrant_url = os.getenv("QDRANT_URL")
     qdrant_api_key = os.getenv("QDRANT_API_KEY")
 
-    print(f"QDRANT_URL={qdrant_url}")
-
     if not qdrant_url:
         raise MissingQdrantURLError("QDRANT_URL is not set.")
 
